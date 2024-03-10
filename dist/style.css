@@ -4,24 +4,41 @@ html, body{
     padding: 0;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
+.white {
+    background-color: #ffffff;
+}
+.grey {
+    background-color: #f7f7f7;
+}
 header ul{
-    background-color: #eeeeee;
     margin: 0;
+    padding: 0;
     list-style-type: none;
     display: flex;
-    justify-content: right;
-    padding: 1.5rem;
+    justify-content: flex-end;
 }
 
 header ul li{
-    margin: auto;
+    margin: 20px;
     font-weight: bold;
 }
 
 main{
     margin: 0;
 }
+
+.section {
+    padding: 50px;
+    max-width: 100%;
+}
+
 .landing {
     margin: 0;
     height: 100vh;
@@ -74,11 +91,42 @@ main{
     }
 }
 
+
 .about {
     height: 100vh;
-    background-color: #eeeeee;
 }
 
+.about h3{
+    font-size: 8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 .container {
-    margin: 20%;
+    display: flex;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.text {
+    min-width: 80em;
+    z-index: 1;
+    max-height: 100%;
+}
+.text p{
+    font-size: 1.5em;
+    background-color: #ffffff;
+    padding: 1em;
+}
+.picture{
+    z-index: 2;
+    margin-right: -5px;
+}
+.picture img{
+    box-shadow: 5px 5px 5px 5px #b8b8b8;
+    
+}
+.projects {
+    height: 100vh;
 }
