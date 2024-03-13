@@ -4,6 +4,10 @@ html, body{
     padding: 0;
 }
 
+body{
+   
+}
+
 header {
     position: fixed;
     top: 0;
@@ -37,11 +41,11 @@ main{
 .section {
     padding: 50px;
     max-width: 100%;
+    height: 100vh;
 }
 
 .landing {
     margin: 0;
-    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -90,16 +94,25 @@ main{
         width: 100%;
     }
 }
-
-
-.about {
-    height: 100vh;
+/*
+.pageUp {
+    animation: pageUp 1s ease forwards;
 }
 
-.about h3{
-    font-size: 8em;
+@keyframes pageUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100vh); 
+    }
+}
+*/
+h3{
+    font-size: 5em;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .container {
     display: flex;
@@ -127,6 +140,24 @@ main{
     box-shadow: 5px 5px 5px 5px #b8b8b8;
     
 }
+
+.knowledge .container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, auto);
+}
+
 .projects {
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .container {
+
+    
+}
+
+.projects .container {
+    
 }
