@@ -4,15 +4,13 @@ html, body{
     padding: 0;
 }
 
-body{
-   
-}
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .white {
@@ -111,11 +109,7 @@ main{
     }
 }
 */
-h3{
-    font-size: 5em;
-    margin-top: 0;
-    margin-bottom: 30px;
-}
+
 .about .container {
     display: flex;
     justify-content: center;
@@ -136,53 +130,75 @@ h3{
     font-size: 1.5em;
     background-color: #ffffff;
     padding: 1em;
+    box-shadow:  0 5px 10px rgba(0,  0, 0, .2);
+    border-radius: 2px;
 }
 .picture{
     z-index: 2;
-    margin-right: -5px;
+    margin-right: -20px;
 }
 .picture img{
-    box-shadow: 5px 5px 5px 5px #b8b8b8;
+    box-shadow: 8px 8px 10px 2px #b8b8b8;
     
 }
 
-.title {
-    margin-top: 20px;
+.sectionTitle {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-shadow: 2px 8px 4px rgba(0,0,0, 0.2);
+}
+
+.white .sectionTitle {
     text-align: end;
 }
 
-
-.knowledge .container{
+.container {
     display: grid;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 15px;
 }
-.knowledge .container .card {
+
+.card {
     box-shadow:  0 5px 10px rgba(0,  0, 0, .2);
     border-radius: 5px;
-    background-color: #f7f7f7;
-    text-align: center;
     padding: 30px 20px;
+    width: 18rem;
+}
+.white .card {
+    background-color: #f7f7f7;
+}
+.white .card .card-title {
+    text-align: center;
 }
 
-
-.projects .cardContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-}
-
-.projects .container {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-}
-
-.projects .container .card{
-
+.grey .card {
     background-color: #ffffff;
 }
+
+
+.contact {
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: 2em;
+}
+
+.contact .contactTitle {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons span{
+    margin-left: 10px;
+}
+
