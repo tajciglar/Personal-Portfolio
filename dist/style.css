@@ -1,9 +1,23 @@
 html, body{
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     margin: 0;
     padding: 0;
+    color: rgb(50, 50, 50);
+
+}
+a {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+}
+.link:hover {
+    font-weight: bolder;
 }
 
+a:visited{
+    text-decoration: none;
+}
 
 header {
     position: fixed;
@@ -13,12 +27,6 @@ header {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.white {
-    background-color: #ffffff;
-}
-.grey {
-    background-color: #f7f7f7;
-}
 header ul{
     margin: 0;
     padding: 0;
@@ -29,8 +37,17 @@ header ul{
 
 header ul li{
     margin: 20px;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 1.3em;
 }
+
+.white {
+    background-color: #ffffff;
+}
+.grey {
+    background-color: #f7f7f7;
+}
+
 
 main{
     margin: 0;
@@ -39,9 +56,9 @@ main{
 .section {
     display: grid;
     grid-template-rows: 100px auto;
-    padding: 50px;
+    padding: 70px 50px;
     max-width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 
 .landing {
@@ -50,9 +67,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.landing h1{
-    margin: 0;
 }
 
 .position {
@@ -63,30 +77,30 @@ main{
 }
 .title1 {
     animation: slideinLeft 2s ease-in-out;
+    margin-bottom: 0;
 }
 
 @keyframes slideinLeft {
     from{
-        margin-bottom: 100%;
+        margin-left: 180%;
         width: 300%;
     }
 
     to{
-        margin-right: 0%;
+        margin-left: 0%;
         width: 100%;
     }
 }
 
-.link h1{
+.title2 {
     margin-left: 40%;
     animation: slideinRight 2s ease-in-out;
-    
 }
 
 @keyframes slideinRight {
     from{
-        margin-left: 130%;
-        width: 200%;
+        margin-left: -190%;
+        width: 300%;
     }
 
     to{
@@ -94,6 +108,7 @@ main{
         width: 100%;
     }
 }
+
 /*
 .pageUp {
     animation: pageUp 1s ease forwards;
@@ -144,7 +159,7 @@ main{
 
 .sectionTitle {
     font-size: 5em;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 30px;
     text-shadow: 2px 8px 4px rgba(0,0,0, 0.2);
 }
