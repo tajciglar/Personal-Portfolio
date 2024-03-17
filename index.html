@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Developer | Taj Brzovič CIglar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="main.js" defer></script>
 </head>
 <body>
     <header class="grey">
         <ul>
             <li><a class="link" href="#about">About</a></li>
+            <li><a class="link" href="#knowledge">Knowledge</a></li>
             <li><a class="link" href="#projects">Projects</a></li>
             <li><a class="link" href="#contact">Contact</a></li>
         </ul>
@@ -19,10 +23,10 @@
         <div class="section white landing">
             <div class="position">
                 <h1 class="title1">Welcome to my portfolio</h1>
-                <a class="link" href="#section1"><h1>- Taj Brzovič Ciglar</h1></a>
+                <h1 class="title2"><a class="link" href="#about">- Taj Brzovič Ciglar</a></h1>
             </div>
         </div>
-        <div class="section grey about" id="section1">
+        <div class="section grey about" id="about">
             <h3 class="sectionTitle">About me</h3>
             <div class="container">
                 <div class="picture">
@@ -61,7 +65,7 @@
                 </div>
             </div>
         </div>
-        <div class="section white knowledge" id="section2">
+        <div class="section white knowledge" id="knowledge">
             <h3 class="sectionTitle">Knowledge</h3>
             <div class="container">
                     <div class="card">
@@ -86,7 +90,7 @@
                     </div>
                 </div>
         </div>
-        <div class="section grey projects" id="section3">
+        <div class="section grey projects" id="projects">
             <h3 class="sectionTitle">Projects</h3>
             <div class="container">
                 <div class="card">
@@ -116,7 +120,7 @@
             </div>
         </div>
     </main>
-    <footer class="contact white">
+    <footer class="contact white" id="contact">
         <h5 class="contactTitle">Contact information:</h5>
         <div>
         <div class="icons">   
@@ -124,7 +128,7 @@
             <span> +386 70 206 506</span><br>
         </div>
         <div class="icons">   
-            <img src="email.svg" alt="email-icon0" style="width: 50px; height: 50px;">
+            <img src="email.svg" alt="email-icon" style="width: 50px; height: 50px;">
             <span> taj.brzovic@gmail.com</span><br>
         </div>
     </footer>
