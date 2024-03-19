@@ -159,6 +159,7 @@ main{
 
 .sectionTitle {
     font-size: 5em;
+    font-weight: 300;
     margin-top: 10px;
     margin-bottom: 30px;
     text-shadow: 2px 8px 4px rgba(0,0,0, 0.2);
@@ -201,6 +202,7 @@ main{
 
 .card-title {
     font-size: 2em;
+    font-weight: 350;
     margin: 0;
 }
 
@@ -235,6 +237,7 @@ main{
  
 .contact .contactTitle {
      font-size: 2.5em;
+     font-weight: 350;
      margin-top: 0;
      margin-bottom: 20px;
      text-align: center;
