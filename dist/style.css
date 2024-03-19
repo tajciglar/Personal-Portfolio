@@ -180,8 +180,9 @@ main{
     box-shadow:  0 5px 10px rgba(0,  0, 0, .2);
     border-radius: 5px;
     padding: 30px 20px;
-    width: 18rem;
+    width: 25rem;
 }
+
 .white .card {
     background-color: #f7f7f7;
 }
@@ -193,19 +194,57 @@ main{
     background-color: #ffffff;
 }
 
-
-.contact {
-   height: 200px;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   padding: 2em;
+.card .card-img-top   {
+    width: 100%;
+    height: 100%;
 }
 
-.contact .contactTitle {
+.card-title {
     font-size: 2em;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Fotter style*/
+
+.card-text {
+    font-size: 1.5em;
+}
+.btn-primary {
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    padding: 15px 10px;
+    font-weight: 400;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px 2px rgb(201, 201, 201);
+}
+
+
+.contact {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+ }
+ 
+.contact .contactTitle {
+     font-size: 2.5em;
+     margin-top: 0;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+.contactInfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    margin: 30px;
 }
 
 .icons {
@@ -217,3 +256,7 @@ main{
     margin-left: 10px;
 }
 
+.icons img{
+    width: 50px;
+    height: 50px;
+}
